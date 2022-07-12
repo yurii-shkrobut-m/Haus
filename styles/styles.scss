@@ -1,0 +1,15 @@
+// null sstyles
+@import 'nullstyle.scss';
+
+.block {
+  font-size: 70px;
+  display: flex;
+
+  .list {
+    display: flex;
+  }
+  .item {
+    font-size: 70px;
+    text-decoration: line-through;
+  }
+}
