@@ -42,7 +42,7 @@ body {
 .container {
   width: 1440px;
   margin: 0 auto;
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
   .discount {
     background: var(--primary-color);
     padding: 16px 0;
@@ -115,8 +115,7 @@ body {
         text-transform: uppercase;
         background-color: transparent;
         color: var(--primary-color);
-        border: 1px solid var(--secondary-color);
-        border-radius: 2px;
+        outline: 1px solid var(--secondary-color);
         &:hover {
           background-color: var(--secondary-color);
           color: var(--accent-color);
@@ -159,6 +158,7 @@ body {
     }
   }
   // Alco types
+
   .alco-types {
     margin: 105px 0 0 0;
     & div {
@@ -221,13 +221,24 @@ body {
           text-transform: uppercase;
           color: var(--secondary-color);
           background-color: var(--primary-color);
+          &:hover {
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+            outline: solid 1px var(--primary-color);
+          }
+          &:active {
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+          }
         }
       }
     }
   }
+  // Aperits
+
   .aperits {
     padding: 0 80px;
-
+    margin-bottom: 50px;
     &::before {
       content: '';
       margin-bottom: 60px;
@@ -236,5 +247,225 @@ body {
       height: 1px;
       background: #bdbdbd;
     }
+    .aperits-image {
+      margin-bottom: 55px;
+    }
+    .aperits-info {
+      display: flex;
+      justify-content: space-between;
+      .aperits-title {
+        font-family: var(--secondary-font-family);
+        font-size: 53px;
+        line-height: 80px;
+        text-align: center;
+        color: var(--primary-color);
+      }
+      .aperits-text {
+        width: 548px;
+        font-size: var(--primary-font-size);
+        line-height: 28px;
+        text-align: justify;
+        color: var(--primary-color);
+      }
+    }
+  }
+  // Easy to drink
+
+  .easy-to-drink {
+    padding: 0 80px;
+    margin-bottom: 50px;
+    &::before {
+      content: '';
+      margin-bottom: 60px;
+      display: block;
+      width: 1280px;
+      height: 1px;
+      background: #bdbdbd;
+    }
+    .easy-to-drink-content {
+      display: flex;
+      justify-content: space-between;
+      .easy-to-drink-info {
+        align-self: flex-end;
+        width: 360px;
+        .easy-to-drink-title {
+          margin-top: 20px;
+          font-family: var(--secondary-font-family);
+          font-size: 30px;
+          line-height: 44px;
+          color: var(--primary-color);
+        }
+        .easy-to-drink-text {
+          margin-top: 20px;
+          font-size: var(--primary-font-size);
+          line-height: 28px;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+  // Alco response
+
+  .alco-response {
+    padding: 95px 0 50px 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    .alco-response-description {
+      width: 320px;
+      .alco-response-text {
+        margin-bottom: 17px;
+        line-height: 32px;
+        text-align: center;
+        color: var(--secondary-color);
+      }
+      .alco-response-title {
+        margin-bottom: 10px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--secondary-color);
+      }
+      .alco-response-signature {
+        text-align: center;
+        text-transform: capitalize;
+        color: #8a8a8a;
+      }
+    }
+  }
+  // Alco ingredients
+
+  .alco-ingredients {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    .alco-ingredients-description {
+      width: 660px;
+      .alco-ingredients-title {
+        margin-bottom: 150px;
+        font-family: var(--secondary-font-family);
+        font-size: 58px;
+        line-height: 80px;
+        color: var(--primary-color);
+      }
+      .alco-ingredients-text {
+        line-height: 32px;
+        color: var(--primary-color);
+        margin-bottom: 35px;
+      }
+      .alco-ingredients-button {
+        background-color: var(--secondary-color);
+        padding: 2px;
+        .alco-ingredients-button-link {
+          cursor: pointer;
+          font-size: 12px;
+          line-height: 18px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: var(--primary-color);
+          &:hover {
+            color: var(--accent-color);
+          }
+          &:active {
+            color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+  // Alco mood
+
+  .alco-mood {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    .alco-set {
+      position: absolute;
+      z-index: 2;
+      top: 60px;
+      left: 60px;
+      padding: 40px 70px;
+      width: 550px;
+      background-color: var(--primary-color);
+      .alco-set-title {
+        font-family: var(--secondary-font-family);
+        font-size: 55px;
+        line-height: 80px;
+        text-align: center;
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+      }
+      .alco-set-text {
+        line-height: 28px;
+        text-align: center;
+        color: var(--secondary-color);
+        margin-bottom: 25px;
+      }
+      .alco-set-button {
+        .alco-set-button-link {
+          display: block;
+          padding: 20px 58px;
+          cursor: pointer;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          &:hover {
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+            outline: solid 1px var(--secondary-color);
+          }
+          &:active {
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+          }
+        }
+      }
+    }
+    .alco-follow {
+      padding: 30px 135px;
+      position: absolute;
+      z-index: 2;
+      top: 380px;
+      left: 60px;
+      width: 550px;
+      background-color: var(--primary-color);
+      .alco-follow-text {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: var(--secondary-color);
+        margin-bottom: 15px;
+      }
+      .alco-follow-social {
+        justify-content: space-between;
+        display: flex;
+        .alco-follow-button {
+          .alco-follow-button-link {
+            display: block;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+            &:hover {
+              color: var(--accent-color);
+            }
+            &:active {
+              color: var(--secondary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+  .alco-footer {
+    padding: 50px 60px;
+    background-color: var(--primary-color);
   }
 }
