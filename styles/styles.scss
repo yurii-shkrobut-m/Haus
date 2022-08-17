@@ -29,6 +29,19 @@
   --secondary-color: #fff;
   --accent-color: #996b60;
 }
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 // styles
 
 body {
@@ -353,22 +366,21 @@ body {
         color: var(--primary-color);
         margin-bottom: 35px;
       }
-      .alco-ingredients-button {
+      .alco-ingredients-link {
+        display: block;
         background-color: var(--secondary-color);
         padding: 2px;
-        .alco-ingredients-button-link {
-          cursor: pointer;
-          font-size: 12px;
-          line-height: 18px;
-          letter-spacing: 1px;
-          text-transform: uppercase;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        &:hover {
+          color: var(--accent-color);
+        }
+        &:active {
           color: var(--primary-color);
-          &:hover {
-            color: var(--accent-color);
-          }
-          &:active {
-            color: var(--primary-color);
-          }
         }
       }
     }
@@ -403,8 +415,8 @@ body {
       }
       .alco-set-button {
         .alco-set-button-link {
-          display: block;
           padding: 20px 58px;
+          display: block;
           cursor: pointer;
           font-size: 12px;
           line-height: 14px;
@@ -467,5 +479,45 @@ body {
   .alco-footer {
     padding: 50px 60px;
     background-color: var(--primary-color);
+    .alco-footer-input-button {
+      .alco-input-mail {
+        padding: 20px 0 20px 9px;
+        width: 390px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        letter-spacing: 0.12px;
+        text-transform: uppercase;
+        color: #818181;
+        background-color: var(--primary-color);
+        &:focus {
+          font-size: 12px;
+          text-align: left;
+          outline: solid 1px tomato;
+          color: var(--secondary-color);
+          background-color: var(--primary-color);
+          text-transform: none;
+        }
+      }
+      .alco-footer-button {
+        padding: 20px 0;
+        width: 50px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 0.12px;
+        text-transform: uppercase;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        &:hover {
+          color: var(--accent-color);
+        }
+        &:active {
+          background-color: var(--primary-color);
+          color: var(--secondary-color);
+          outline: solid 1px tomato;
+        }
+      }
+    }
   }
 }

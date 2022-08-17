@@ -409,11 +409,10 @@ body {
   color: var(--primary-color);
   margin-bottom: 35px;
 }
-.container .alco-ingredients .alco-ingredients-description .alco-ingredients-button {
+.container .alco-ingredients .alco-ingredients-description .alco-ingredients-link {
+  display: block;
   background-color: var(--secondary-color);
   padding: 2px;
-}
-.container .alco-ingredients .alco-ingredients-description .alco-ingredients-button .alco-ingredients-button-link {
   cursor: pointer;
   font-size: 12px;
   line-height: 18px;
@@ -421,10 +420,10 @@ body {
   text-transform: uppercase;
   color: var(--primary-color);
 }
-.container .alco-ingredients .alco-ingredients-description .alco-ingredients-button .alco-ingredients-button-link:hover {
+.container .alco-ingredients .alco-ingredients-description .alco-ingredients-link:hover {
   color: var(--accent-color);
 }
-.container .alco-ingredients .alco-ingredients-description .alco-ingredients-button .alco-ingredients-button-link:active {
+.container .alco-ingredients .alco-ingredients-description .alco-ingredients-link:active {
   color: var(--primary-color);
 }
 .container .alco-mood {
@@ -456,8 +455,8 @@ body {
   margin-bottom: 25px;
 }
 .container .alco-mood .alco-set .alco-set-button .alco-set-button-link {
-  display: block;
   padding: 20px 58px;
+  display: block;
   cursor: pointer;
   font-size: 12px;
   line-height: 14px;
@@ -513,4 +512,42 @@ body {
 .container .alco-footer {
   padding: 50px 60px;
   background-color: var(--primary-color);
+}
+.container .alco-footer .alco-footer-input-button .alco-input-mail {
+  padding: 20px 0 20px 9px;
+  width: 390px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: #818181;
+  background-color: var(--primary-color);
+}
+.container .alco-footer .alco-footer-input-button .alco-input-mail:focus {
+  font-size: 12px;
+  text-align: left;
+  outline: solid 1px tomato;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  text-transform: none;
+}
+.container .alco-footer .alco-footer-input-button .alco-footer-button {
+  padding: 20px 0;
+  width: 50px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.container .alco-footer .alco-footer-input-button .alco-footer-button:hover {
+  color: var(--accent-color);
+}
+.container .alco-footer .alco-footer-input-button .alco-footer-button:active {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  outline: solid 1px tomato;
 }/*# sourceMappingURL=styles.css.map */
