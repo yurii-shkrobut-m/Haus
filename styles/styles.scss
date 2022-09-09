@@ -479,43 +479,118 @@ body {
   .alco-footer {
     padding: 50px 60px;
     background-color: var(--primary-color);
-    .alco-footer-input-button {
-      .alco-input-mail {
-        padding: 20px 0 20px 9px;
-        width: 390px;
-        font-size: 12px;
-        line-height: 14px;
-        text-align: left;
-        letter-spacing: 0.12px;
-        text-transform: uppercase;
-        color: #818181;
-        background-color: var(--primary-color);
-        &:focus {
-          font-size: 12px;
-          text-align: left;
-          outline: solid 1px tomato;
+    .footer-massif {
+      display: flex;
+      margin-bottom: 125px;
+      .stay-posted {
+        .stay-posted-title {
+          margin-bottom: 12px;
+          font-family: var(--secondary-font-family);
+          font-size: 42px;
+          line-height: 72px;
           color: var(--secondary-color);
-          background-color: var(--primary-color);
-          text-transform: none;
+        }
+        .stay-posted-text {
+          margin-bottom: 14px;
+          width: 424px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+          color: var(--secondary-color);
+        }
+        .alco-footer-input-button {
+          .alco-input-mail {
+            padding: 20px 0 20px 9px;
+            width: 390px;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: left;
+            letter-spacing: 0.12px;
+            text-transform: uppercase;
+            color: #818181;
+            background-color: var(--primary-color);
+            &:focus {
+              font-size: 12px;
+              text-align: left;
+              outline: solid 1px tomato;
+              color: var(--secondary-color);
+              background-color: var(--primary-color);
+              text-transform: none;
+            }
+          }
+          .alco-footer-button {
+            padding: 20px 0;
+            width: 50px;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 0.12px;
+            text-transform: uppercase;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            &:hover {
+              color: var(--accent-color);
+            }
+            &:active {
+              background-color: var(--primary-color);
+              color: var(--secondary-color);
+            }
+          }
         }
       }
-      .alco-footer-button {
-        padding: 20px 0;
-        width: 50px;
-        font-size: 12px;
-        line-height: 14px;
-        text-align: center;
-        letter-spacing: 0.12px;
-        text-transform: uppercase;
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
-        &:hover {
-          color: var(--accent-color);
+      .footer-links {
+        display: flex;
+        margin-left: 178px;
+        .links-section {
+          margin-right: 100px;
+          .footer-links-title {
+            margin-bottom: 25px;
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: var(--secondary-color);
+          }
+          .footer-links-item {
+            margin-bottom: 21px;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            .footer-links-item-link {
+              cursor: pointer;
+              color: rgba(255, 255, 255, 0.6);
+              &:hover {
+                color: var(--accent-color);
+              }
+              &:active {
+                color: rgba(255, 255, 255, 0.6);
+              }
+            }
+          }
         }
-        &:active {
-          background-color: var(--primary-color);
+      }
+    }
+    .footer-copyright {
+      .footer-copyright-list {
+        width: 760px;
+        display: flex;
+        justify-content: space-between;
+        .footer-copyright-item {
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(255, 255, 255, 0.6);
+          .footer-copyright-item-link {
+            cursor: pointer;
+            &:hover {
+              color: var(--accent-color);
+            }
+            &:active {
+              color: inherit;
+            }
+          }
+        }
+        .footer-copyright-item:first-child {
           color: var(--secondary-color);
-          outline: solid 1px tomato;
         }
       }
     }
